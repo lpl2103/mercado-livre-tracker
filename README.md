@@ -50,6 +50,7 @@ Monitor de preços inteligente para produtos do Mercado Livre. Coleta preços au
 
 ```powershell
 pip install uv
+```
 
 ## 🚀 Instalação
 ### 1. Clone o projeto
@@ -57,44 +58,45 @@ pip install uv
 ```powershell
 git clone https://github.com/lpl2103/mercado-livre-tracker.git
 cd mercado-livre-tracker
-
+```
 ### 2. Execute o setup automático
 ```powershell
-
 .\setup.ps1
+```
 
 O setup instala todas as dependências, o navegador Chromium e cria os arquivos necessários.
-3. Adicione seus produtos
+
+### 3. Adicione seus produtos
 
 Edite o arquivo products.txt com os links dos produtos que deseja monitorar:
 text
 
-# Um link por linha - linhas com # são comentários
+> # Um link por linha - linhas com # são comentários
 
-# Caixa de som JBL
-https://www.mercadolivre.com.br/caixa-de-som-bluetooth-jbl-xtreme-5-preta/up/MLBU4052365012
+> # Caixa de som JBL
+> https://www.mercadolivre.com.br/caixa-de-som-bluetooth-jbl-xtreme-5-preta/up/MLBU4052365012
 
-# Tênis Olympikus
-https://www.mercadolivre.com.br/tenis-olympikus-corre-5/p/MLB12345678
+> # Tênis Olympikus
+> https://www.mercadolivre.com.br/tenis-olympikus-corre-5/p/MLB12345678
 
-4. Teste manualmente
-powershell
-
+### 4. Teste manualmente
+```powershell
 uv run python -m src.scheduler
+```
 
 Deixe rodar por alguns ciclos (Ctrl+C para parar) para gerar os primeiros dados.
-5. Gere o dashboard
-powershell
-
+### 5. Gere o dashboard
+```powershell
 uv run python -m src.dashboard
 start data/dashboard.html
+```
 
-6. Instale como serviço (inicia com Windows)
-powershell
-
+### 6. Instale como serviço (inicia com Windows)
+```powershell
 uv run python -m src.install_service install
+```
 
-📖 Uso
+## 📖 Uso
 Comandos principais
 Comando	Descrição
 uv run python -m src.scheduler	Inicia o monitor manualmente
@@ -117,7 +119,7 @@ Abra data/dashboard.html no navegador para ver:
 
     🌙 Botão de tema claro/escuro
 
-Notificações
+# Notificações
 
 O tracker envia notificações quando:
 
@@ -126,8 +128,7 @@ O tracker envia notificações quando:
     📊 A quantidade de parcelas aumenta
 
 Para configurar email, edite o scheduler.py:
-python
-
+```python
 email_config={
     "from": "seuemail@gmail.com",
     "to": "destinatario@gmail.com",
@@ -136,9 +137,10 @@ email_config={
     "username": "seuemail@gmail.com",
     "password": "sua-senha-app"
 }
+```
 
-📁 Estrutura do Projeto
-text
+## 📁 Estrutura do Projeto
+```text
 
 mercado-livre-tracker/
 ├── 📄 pyproject.toml          # Dependências e metadados
@@ -155,19 +157,21 @@ mercado-livre-tracker/
 └── 📁 data/
     ├── 📊 products.json        # Banco de dados (histórico)
     └── 📄 dashboard.html       # Relatório gerado
+```
 
-⚙️ Configuração Avançada
+## ⚙️ Configuração Avançada
 Intervalo de coleta
 
 Edite scheduler.py:
-python
+```python
 
 scheduler = TrackerScheduler.from_file(
     filepath=Path("products.txt"),
     interval_minutes=30,
 )
+```
 
-Modo silencioso (sem janela)
+# Modo silencioso (sem janela)
 
 O install_service.py já usa pythonw.exe por padrão.
 Múltiplos produtos
@@ -179,7 +183,8 @@ ModuleNotFoundError	Execute uv pip install -e .
 Verificação do ML	Abra o link no navegador e resolva o captcha manualmente
 Preço errado	Verifique se o produto usa o layout padrão do ML
 Tarefa não inicia	Execute como Administrador
-📄 Licença
+
+# 📄 Licença
 
 MIT © 2026
 <p align="center"> <sub>Feito com ❤️ e muito ☕</sub> </p> '@ | Out-File -FilePath README.md -Encoding UTF8 ```
