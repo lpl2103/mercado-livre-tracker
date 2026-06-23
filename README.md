@@ -74,10 +74,10 @@ text
 \# Um link por linha - linhas com # são comentários
 
 \# Caixa de som JBL
-\https://www.mercadolivre.com.br/caixa-de-som-bluetooth-jbl-xtreme-5-preta/up/MLBU4052365012
+https://www.mercadolivre.com.br/caixa-de-som-bluetooth-jbl-xtreme-5-preta/up/MLBU4052365012
 
 \# Tênis Olympikus
-\https://www.mercadolivre.com.br/tenis-olympikus-corre-5/p/MLB12345678
+https://www.mercadolivre.com.br/tenis-olympikus-corre-5/p/MLB12345678
 
 ### 4. Teste manualmente
 ```powershell
