@@ -51,16 +51,15 @@ Monitor de preços inteligente para produtos do Mercado Livre. Coleta preços au
 ```powershell
 pip install uv
 
+## 🚀 Instalação
+### 1. Clone o projeto
 
-🚀 Instalação
-1. Clone o projeto
-powershell
-
+```powershell
 git clone https://github.com/lpl2103/mercado-livre-tracker.git
 cd mercado-livre-tracker
 
-2. Execute o setup automático
-powershell
+### 2. Execute o setup automático
+```powershell
 
 .\setup.ps1
 
