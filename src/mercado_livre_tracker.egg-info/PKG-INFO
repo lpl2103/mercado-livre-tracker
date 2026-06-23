@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: mercado-livre-tracker
+Version: 0.1.0
+Requires-Python: >=3.11
+Requires-Dist: httpx[http2]>=0.27.0
+Requires-Dist: lxml>=5.2.0
+Requires-Dist: cssselect>=1.2.0
+Requires-Dist: win10toast>=0.9
+Provides-Extra: dev
+Requires-Dist: ruff>=0.4.0; extra == "dev"

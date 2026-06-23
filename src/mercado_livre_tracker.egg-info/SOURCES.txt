@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/crawler.py
+src/notifier.py
+src/scheduler.py
+src/storage.py
+src/mercado_livre_tracker.egg-info/PKG-INFO
+src/mercado_livre_tracker.egg-info/SOURCES.txt
+src/mercado_livre_tracker.egg-info/dependency_links.txt
+src/mercado_livre_tracker.egg-info/requires.txt
+src/mercado_livre_tracker.egg-info/top_level.txt

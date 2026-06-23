@@ -1,0 +1,9 @@
+# .gitignore
+.venv/
+__pycache__/
+*.pyc
+data/*.json
+data/*.html
+data/*.png
+data/debug*
+task_config.xml

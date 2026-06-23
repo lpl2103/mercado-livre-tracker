@@ -1,0 +1,18 @@
+[project]
+name = "mercado-livre-tracker"
+version = "0.2.0"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx[http2]>=0.27.0",
+    "lxml>=5.2.0",
+    "cssselect>=1.2.0",
+    "playwright>=1.44.0",
+    "win10toast>=0.9",
+    "chart.js>=4.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.4.0",
+    "mypy>=1.10.0",
+]
