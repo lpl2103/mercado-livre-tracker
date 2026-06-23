@@ -71,13 +71,13 @@ O setup instala todas as dependências, o navegador Chromium e cria os arquivos 
 Edite o arquivo products.txt com os links dos produtos que deseja monitorar:
 text
 
-> # Um link por linha - linhas com # são comentários
+\# Um link por linha - linhas com # são comentários
 
-> # Caixa de som JBL
-> https://www.mercadolivre.com.br/caixa-de-som-bluetooth-jbl-xtreme-5-preta/up/MLBU4052365012
+\ # Caixa de som JBL
+\ https://www.mercadolivre.com.br/caixa-de-som-bluetooth-jbl-xtreme-5-preta/up/MLBU4052365012
 
-> # Tênis Olympikus
-> https://www.mercadolivre.com.br/tenis-olympikus-corre-5/p/MLB12345678
+\ # Tênis Olympikus
+\ https://www.mercadolivre.com.br/tenis-olympikus-corre-5/p/MLB12345678
 
 ### 4. Teste manualmente
 ```powershell
@@ -187,4 +187,4 @@ Tarefa não inicia	Execute como Administrador
 # 📄 Licença
 
 MIT © 2026
-<p align="center"> <sub>Feito com ❤️ e muito ☕</sub> </p> '@ | Out-File -FilePath README.md -Encoding UTF8 ```
+<p align="center"> <sub>Feito com ❤️ e muito ☕</sub> </p>
